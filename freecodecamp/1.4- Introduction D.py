@@ -1,4 +1,8 @@
-#Elements of python, a summary of the most important part for python like the reserved words or the python scripts
+'''
+Element of Python:
+    An explanation of the most important parts for Python like the reserved words that it can't be used for the variables or
+    how we can work in different ways with the same number that it can be introduced for the user.
+'''
 
 #'float' for decimals and 'int' for integer numbers
 number = float(input('Write a number: '))
