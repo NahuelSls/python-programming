@@ -40,23 +40,20 @@ def correct_price(price):
         if price >= 300:
             discount = price * 30 / 100
             new_price = price - discount
-            print('30% discount applied:', new_price)
 
         elif price >= 200 and price < 300:
             discount = price * 20 / 100
             new_price = price - discount
-            print('20% discount applied:', new_price)
 
         elif price >= 100 and price < 200:
             discount = price * 10 / 100
             new_price = price - discount
-            print('10% discount applied:', new_price)
 
         elif price < 100:
             discount = price * 5 / 100
             new_price = price - discount
-            print('5% discount applied:', new_price)
-        return
+
+        return new_price
 
 def wrong_price(again):
         print('Wrong number. Please, try again.')
@@ -65,7 +62,7 @@ def wrong_price(again):
 while True:
     price_0 = int(input('\nIntroduce a price: '))
     if price_0 >= 0:
-        correct_price(price_0)
+        print('Discount applied:', correct_price(price_0))
         break
     else:
         wrong_price(price_0)
