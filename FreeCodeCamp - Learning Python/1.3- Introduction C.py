@@ -15,3 +15,5 @@ print(z, '\n')
 # Another form that we can print all the variables at the same line. We can put some text to explain what are each number of the output
 print(x, y, z)
 print('The value introduced is', x, 'but doing some calculation it can be', y, 'or', z)
+
+
