@@ -1,5 +1,12 @@
-#Discounted price exercise
+'''
+This is an exercise to apply discounts to a price introduced by the user.
+While the price introduced by the user >= 0 the program will show us the applied discount for X price.
+If the user put a price < 0 then the program will ask for another price.
 
+An extra for this part I decided to try the function options to avoid to use 'break' in each condition.
+'''
+
+#Using a loop for this exercise
 while True:
     price = int(input('\nWrite the price and check the discounts: '))
 
@@ -25,6 +32,48 @@ while True:
         break
     else:
         print('Sorry, you need to try again.')
+
+
+#Using function for the same exercise
+def correct_price(price):
+    while True:
+        if price >= 300:
+            discount = price * 30 / 100
+            new_price = price - discount
+            print('30% discount applied:', new_price)
+
+        elif price >= 200 and price < 300:
+            discount = price * 20 / 100
+            new_price = price - discount
+            print('20% discount applied:', new_price)
+
+        elif price >= 100 and price < 200:
+            discount = price * 10 / 100
+            new_price = price - discount
+            print('10% discount applied:', new_price)
+
+        elif price < 100:
+            discount = price * 5 / 100
+            new_price = price - discount
+            print('5% discount applied:', new_price)
+        return
+
+def wrong_price(again):
+        print('Wrong number. Please, try again.')
+        return
+
+while True:
+    price_0 = int(input('\nIntroduce a price: '))
+    if price_0 >= 0:
+        correct_price(price_0)
+        break
+    else:
+        wrong_price(price_0)
+
+
+
+
+
 
 
 
