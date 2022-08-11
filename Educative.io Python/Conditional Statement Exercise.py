@@ -3,11 +3,11 @@ This is an exercise to apply discounts to a price introduced by the user.
 While the price introduced by the user >= 0 the program will show us the applied discount for X price.
 If the user put a price < 0 then the program will ask for another price.
 
-An extra for this part I decided to try the function options to avoid to use 'break' in each condition.
+An extra for this part I decided to try the function options to avoid to use 'break' in each condition and the different type of loops that are explaining in this part.
 '''
 
 #Using a loop for this exercise
-while True:
+'''while True:
     price = int(input('\nWrite the price and check the discounts: '))
 
     if price >= 300:
@@ -66,7 +66,30 @@ while True:
         break
     else:
         wrong_price(price_0)
+        '''
 
+while True:
+    price = int(input('\nIntroduce another price: '))
+    prices = [price - price * 30 / 100, price - price * 20 / 100, price - price * 10 /100, price - price * 5 / 100]
+
+    if price >= 0:
+        for i in range(0, len(prices)):
+            if price >= 300 and i == 0:
+                new_pr = prices[i]
+                print('30% discounts applied: ', new_pr)
+            elif price >= 200 and price < 300 and i == 1:
+                new_pr = prices[i]
+                print('20% discounts applied: ', new_pr)
+            elif price >= 100 and price < 200 and i == 2:
+                new_pr = prices[i]
+                print('10% disocunts applied:', new_pr)
+            elif price < 100 and i == 3:
+                new_pr = prices[i]
+                print('5% disocunts applied:', new_pr)
+        break
+
+    else:
+         print('No discounts applied, try again.')
 
 
 
