@@ -26,5 +26,8 @@ class SavingsAccount(Account):
         return a
 
 demo = SavingsAccount("Mark", 2000, 5)
-print(demo.withdrawal(200))
+print("Initial balance:", demo.getBalance())
+print("Balance after withdrawal:", demo.withdrawal(200))
+print("Balance after deposit:", demo.deposit(200))
+print("Interest on current balance:", demo.interestAmount())
 
