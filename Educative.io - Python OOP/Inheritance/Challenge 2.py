@@ -1,21 +1,20 @@
 '''
 Handling a Bank Account
 '''
-
 class Account:
-    def __init__(self, title = None, balance = 0, amount):
+    def __init__(self, title = None, balance = 0):
         self.title = title
         self.balance = balance
     def getBalance(self):
         return (self.balance)
 
     def deposit(self, amount):
-        a = self.amount + self.balance
-        return
+        self.balance = self.balance + amount
+        return (self.balance)
 
     def withdrawal(self, amount):
-        a = self.balance - self.amount
-        return
+        self.balance = self.balance - amount
+        return (self.balance)
 
 class SavingsAccount(Account):
     def __init__(self, title = None, balance = 0, interestRate = 0):
@@ -23,9 +22,9 @@ class SavingsAccount(Account):
         super().__init__(title, balance)
 
     def interestAmount(self):
-        a = self.interestRate * self.balance
-        return (a / 100)
+        a = self.interestRate * self.balance / 100
+        return a
 
 demo = SavingsAccount("Mark", 2000, 5)
-print(demo.withdrawal(50))
+print(demo.withdrawal(200))
 
