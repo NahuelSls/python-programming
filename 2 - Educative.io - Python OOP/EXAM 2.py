@@ -161,6 +161,3 @@ cop.get_melting_point()
 
 gol = Gold()
 gol.get_melting_point()
-
-
-
