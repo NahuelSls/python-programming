@@ -1,7 +1,6 @@
 '''
 Highs and lows
 '''
-
 def count_low_high(num_list):
     if len(num_list) == 0:
         return None
