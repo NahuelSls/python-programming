@@ -15,7 +15,7 @@ class Stack():
     def pop(self):
         return self.items.pop()
 
-    # empty method that returns True or False if the list its empty or not
+    # empty method that returns True or False if the list is empty or not
     def is_empty(self):
         return self.items == []
 
@@ -29,14 +29,18 @@ class Stack():
         return self.items
 
 myStack = Stack()
+print("\nBefore adding some elements:")
+print('Is your stack empty?', myStack.is_empty()) # True
+
+# we push some elememts to our stack
 myStack.push('A')
 myStack.push('B')
 myStack.push('C')
 myStack.push('D')
 
-print('Your stack:', myStack.get_stack())
-print('\nThe last element added to your stack:', myStack.peek())
-print('\nIs your stack empty?', myStack.is_empty())
+print('\nYour stack:', myStack.get_stack()) # ['A', 'B', 'C', 'D']
+print('The last element added to your stack:', myStack.peek()) # D
+print('After adding items, is your stack empty?', myStack.is_empty()) # False
 
 myStack.pop()
-print('\nYour new stack after popping the last element:', myStack.get_stack())
+print('\nYour new stack after popping the last element:', myStack.get_stack()) # ['A', 'B', 'C']
