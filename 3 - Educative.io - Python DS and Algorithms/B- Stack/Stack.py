@@ -44,3 +44,5 @@ print('After adding items, is your stack empty?', myStack.is_empty()) # False
 
 myStack.pop()
 print('\nYour new stack after popping the last element:', myStack.get_stack()) # ['A', 'B', 'C']
+
+
