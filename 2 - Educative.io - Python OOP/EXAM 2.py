@@ -127,37 +127,51 @@ print("\nNew data:", emplo.get_salary())
 
 #EXAM EXERCISE 3
 from abc import ABC, abstractmethod
+from dataclasses import dataclass
 
 class Metal(ABC):
     @abstractmethod
     def get_melting_point(self):
         pass
 
+@dataclass
 class Aluminium(Metal):
+    mpoint: int
+    '''
     def __init__(self, mpoint = 660):
         self.mpoint = mpoint
+    '''
     def get_melting_point(self):
-        print("Melting point for Aluminium:", self.mpoint)
+        print("\nMelting point for Aluminium:", self.mpoint)
 
+@dataclass
 class Copper(Metal):
+    mpoint: int
+    '''
     def __init__(self, mpoint = 1084):
         self.mpoint = mpoint
-
+    '''
     def get_melting_point(self):
-        print("Melting point for Copper:", self.mpoint)
+        print("\nMelting point for Copper:", self.mpoint)
 
+@dataclass
 class Gold(Metal):
+    mpoint: int
+    '''
     def __init__(self, mpoint = 1063):
         self.mpoint = mpoint
-
+    '''
     def get_melting_point(self):
-        print("Melting point for Gold:", self.mpoint)
+        print("\nMelting point for Gold:", self.mpoint)
 
-clas = Aluminium()
+clas = Aluminium(660)
 clas.get_melting_point()
+print(repr(clas))
 
-cop = Copper()
+cop = Copper(1084)
 cop.get_melting_point()
+print(repr(cop))
 
-gol = Gold()
+gol = Gold(1063)
 gol.get_melting_point()
+print(repr(gol))
