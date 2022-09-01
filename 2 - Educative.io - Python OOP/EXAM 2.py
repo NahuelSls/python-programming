@@ -129,6 +129,7 @@ print("\nNew data:", emplo.get_salary())
 from abc import ABC, abstractmethod
 from dataclasses import dataclass
 
+@staticmethod
 class Metal(ABC):
     @abstractmethod
     def get_melting_point(self):
