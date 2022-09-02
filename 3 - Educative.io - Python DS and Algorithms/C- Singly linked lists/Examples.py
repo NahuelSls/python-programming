@@ -1,6 +1,7 @@
 '''
 Singly linked lists
 '''
+# First of all we create the Node class that is going to be useful for the other class and methods
 class Node:
     def __init__(self, data):
         self.data = data
