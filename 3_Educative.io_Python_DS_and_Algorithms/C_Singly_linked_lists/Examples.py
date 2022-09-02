@@ -1,7 +1,6 @@
 '''
 Singly linked lists
 '''
-
 class Node:
     def __init__(self, data):
         self.data = data
@@ -83,7 +82,6 @@ llist.insert_after_node(llist.head.next, "F")
 llist.delete_node("C")
 
 llist.print_list()
-
 
 
 
