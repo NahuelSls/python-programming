@@ -141,7 +141,43 @@ class LinkedList:
 
         curr_1.next, curr_2.next = curr_2.next, curr_1.next
 
+    def print_helper(self, node, name):
+        if node is None:
+            print(name + ": None")
+        else:
+            print(name + ":" + node.data)
 
+    def reverse(self, method):
+        if method == 1:
+            print("\n   REVERSE ITERATIVE")
+            prev = None
+            cur = self.head
+            while cur:
+                nxt = cur.next
+                cur.next = prev
+
+                self.print_helper(prev, "PREV")
+                self.print_helper(cur, "CUR")
+                self.print_helper(nxt, "NXT")
+                print('')
+
+                prev = cur
+                cur = nxt
+            self.head = prev
+
+        elif method == 2:
+            print("\n   REVERSE RECURSIVE")
+            def reverse_recursive(cur, prev):
+                if not cur:
+                    return prev
+
+                nxt = cur.next
+                cur.next = prev
+                prev = cur
+                cur = nxt
+                return reverse_recursive(cur, prev)
+
+            self.head = reverse_recursive(cur = self.head, prev = None)
 
 
 llist = LinkedList()
@@ -168,6 +204,12 @@ llist.print_list()
 print("\nSwapping nodes F and G:")
 llist.swap_nodes("F", "G")
 llist.print_list()
+
+print("\nReversing nodes - Iterative or Recursive methods:")
+# using the last list, swapping F and G
+llist.reverse(2) # method 1 for Iterative and method 2 for recursive
+llist.print_list()
+
 
 
 

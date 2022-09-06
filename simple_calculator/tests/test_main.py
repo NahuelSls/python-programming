@@ -109,7 +109,7 @@ def test_avg_lower_not_included():
 
     result = calculator.avg([2, 5, 12, 98], lt = 5)
 
-    assert result == pytest.approx(38.3333333333)
+    assert result == pytest.approx(38.33333333)
 
 def test_avg_empty_list():
     calculator = SimpleCalculator()
