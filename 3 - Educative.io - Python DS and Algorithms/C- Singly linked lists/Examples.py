@@ -141,12 +141,14 @@ class LinkedList:
 
         curr_1.next, curr_2.next = curr_2.next, curr_1.next
 
+    # it's a little help to know how is working the reverse code for iterative
     def print_helper(self, node, name):
         if node is None:
             print(name + ": None")
         else:
             print(name + ":" + node.data)
 
+    # with this method we can reverse our linked list using method 1 or method 2 (iterative and recursive methods)
     def reverse(self, method):
         if method == 1:
             print("\n   REVERSE ITERATIVE")
@@ -207,7 +209,7 @@ llist.print_list()
 
 print("\nReversing nodes - Iterative or Recursive methods: ")
 # using the last list, swapping F and G
-llist.reverse(2) # method 1 for Iterative and method 2 for recursive
+llist.reverse(1) # method 1 for Iterative and method 2 for recursive
 llist.print_list()
 
 
