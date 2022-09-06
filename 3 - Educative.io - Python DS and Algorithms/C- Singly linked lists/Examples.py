@@ -205,7 +205,7 @@ print("\nSwapping nodes F and G:")
 llist.swap_nodes("F", "G")
 llist.print_list()
 
-print("\nReversing nodes - Iterative or Recursive methods:")
+print("\nReversing nodes - Iterative or Recursive methods: ")
 # using the last list, swapping F and G
 llist.reverse(2) # method 1 for Iterative and method 2 for recursive
 llist.print_list()

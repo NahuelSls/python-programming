@@ -102,14 +102,14 @@ def test_avg_upper_not_included():
 
     result = calculator.avg([2, 5, 12, 98], ut = 12)
 
-    assert result == pytest.approx(6.3333333)
+    assert result == pytest.approx(6.33333)
 
 def test_avg_lower_not_included():
     calculator = SimpleCalculator()
 
     result = calculator.avg([2, 5, 12, 98], lt = 5)
 
-    assert result == pytest.approx(38.33333333)
+    assert result == pytest.approx(38.333333)
 
 def test_avg_empty_list():
     calculator = SimpleCalculator()
