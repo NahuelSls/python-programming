@@ -1,5 +1,5 @@
 '''
-Singly linked lists
+Singly linked lists,
 '''
 # First of all we create the Node class that is going to be useful for the other class and methods
 class Node:
@@ -211,6 +211,7 @@ print("\nReversing nodes - Iterative or Recursive methods: ")
 # using the last list, swapping F and G
 llist.reverse(1) # method 1 for Iterative and method 2 for recursive
 llist.print_list()
+
 
 
 
