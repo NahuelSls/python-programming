@@ -116,7 +116,7 @@ def test_avg_empty_list():
 
     result = calculator.avg([])
 
-    assert result == 0
+    assert result == 0 #commit
 
 
 
