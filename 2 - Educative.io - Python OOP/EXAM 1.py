@@ -24,7 +24,7 @@ Peter.department = "Computer Science" # ERROR
 John = Student()
 John.ID = 3790
 John.GPA = 3.7
-
+-
 
 # Printing properties of Peter
 print("ID =", Peter.ID)
