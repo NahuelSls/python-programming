@@ -1,7 +1,6 @@
 '''
 An example code with python that is going to be explained in the different lessons that
 FreeCodeCamp - Learning Python has for this language.
-
 In other words, it's an example that they used in different videos for explaining some important things about Python.
 '''
 
