@@ -1,14 +1,14 @@
 '''
-An example code with python that is going to be explained in the different lessons that
-FreeCodeCamp - Learning Python has for this language.
+An example code with python that is going to be explained in different lessons that
+"FreeCodeCamp - Learning Python" has for this language.
 In other words, it's an example that they used in different videos for explaining some important things about Python.
 '''
 
 # In general, this code count the common word that the user has in a file that it was introduced at the beggining of the simulation
 
-# The user can introduce the name of the file and then the program open it
-name = input('Enter file name: ')
-File = open(name, 'r')
+# The user can introduce the name of the file and then the program open it.
+name = input('Enter file name: ') # In this case: "file.txt"
+File = open(name) # opens the file saved in the variable "name"
 
 # Counts the number that each word appears in the file introduced at the beginning
 counts = dict()
