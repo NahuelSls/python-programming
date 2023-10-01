@@ -10,7 +10,7 @@ That means that we can make operations with this changes and print the result as
 
 Something that we can't do is to convert some letters into an integer because we can't add numbers to letters.
 
-An extra for this part of the course, there are an order evalutation whose name's "operator precedence".
+An extra for this part of the course, there are an order evalutation whose name is "operator precedence".
 That means that some operator are going to be calculated before another, the highest precedence rule to the lowest.
 For example: parenthesis >> power or multiplication
 '''

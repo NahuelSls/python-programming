@@ -1,7 +1,7 @@
 '''
 Remembering the reserved words in Python that can't be used like a variable and an introduction of how we can work with
 variables.
-There are some rules for this variables because we can't do something like "Your.name" instead of "Your_name".
+There are some rules for these variables because we can't do something like "Your.name" instead of "Your_name".
 
 Another thing that we can learn here is how to use some mathematical expression or the assignment statement. Some basic
 information that is going to be expanded in the future.
