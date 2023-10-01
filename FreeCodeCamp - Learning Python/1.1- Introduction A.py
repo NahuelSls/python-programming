@@ -11,11 +11,12 @@ name = input('Enter file name: ') # In this case: "file.txt"
 File = open(name) # opens the file saved in the variable "name"
 
 # Counts the number that each word appears in the file introduced at the beginning
-counts = dict()
-for line in File:
-    words = line.split()
-    for word in words:
-        counts[word] = counts.get(word, 0) + 1
+counts = dict() # Creates a dictionary and saved it as "count"
+
+for line in File: # starts a loop to read each line of the file
+    words = line.split() #split the line to read each word
+    for word in words: # starts another loop for each word in the line
+        counts[word] = counts.get(word, 0) + 1 # Search in the dict() function if there are the same word saved in "word"
 #print(counts)
 
 # The pogram choose the most common word of the file
